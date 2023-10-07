@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1013641803922278564}
   - component: {fileID: 7082475654741716923}
   m_Layer: 5
-  m_Name: Health bar 1
+  m_Name: OxygenBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,14 +28,14 @@ RectTransform:
   m_GameObject: {fileID: 2690596651056632637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1944, y: 1.1944, z: 1.1944}
+  m_LocalScale: {x: 0.5609499, y: 0.5609499, z: 0.5609499}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5500648820006158723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 335, y: 476}
+  m_AnchoredPosition: {x: -370.3, y: 132.89992}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1128499623359564126
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 2508993992761179628}
   - component: {fileID: 8364165459402916573}
   m_Layer: 5
-  m_Name: Image
+  m_Name: RingOutline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,14 +120,14 @@ RectTransform:
   m_GameObject: {fileID: 4525323001318107890}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1944, y: 1.1944, z: 1.1944}
+  m_LocalScale: {x: 0.5609499, y: 0.5609499, z: 0.5609499}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5500648820006158723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 335.00003, y: 476.00006}
+  m_AnchoredPosition: {x: -370.3, y: 132.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2508993992761179628
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 4147001941790050016}
   - component: {fileID: 5502683473145743342}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: OxygenText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,14 +195,14 @@ RectTransform:
   m_GameObject: {fileID: 6684466511187594996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.46965, y: 0.46965, z: 0.46965}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5500648820006158723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 336, y: 470}
+  m_AnchoredPosition: {x: -370, y: 131.70001}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4147001941790050016
