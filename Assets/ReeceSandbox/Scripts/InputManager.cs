@@ -17,6 +17,7 @@ public class InputManager : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
+        // Creating an instance of the input manager class
         if (instance != null && instance != this) 
         {
             Destroy(this.gameObject);
@@ -41,17 +42,14 @@ public class InputManager : MonoBehaviour
 
     public Vector2 GetMovement()
     {
+        // Getting value vector2 for movement
         return inputSystem.Player.Move.ReadValue<Vector2>();
     }
 
     public Vector2 GetMouseDelta()
     {
+        // Getting value vector2 for the camera
         return inputSystem.Player.Look.ReadValue<Vector2>();
-    }
-
-    private void Update()
-    {
-        Debug.Log(GetMouseDelta());
     }
 
 }
