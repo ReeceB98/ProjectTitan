@@ -44,4 +44,14 @@ public class InputManager : MonoBehaviour
         return inputSystem.Player.Move.ReadValue<Vector2>();
     }
 
+    public Vector2 GetMouseDelta()
+    {
+        return inputSystem.Player.Look.ReadValue<Vector2>();
+    }
+
+    private void Update()
+    {
+        Debug.Log(GetMouseDelta());
+    }
+
 }
