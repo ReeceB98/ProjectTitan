@@ -2,21 +2,16 @@ using UnityEngine;
 
 public class RocketReplenish : MonoBehaviour
 {
-    private Oxygen oxygen;
-    private AudioSource airRelease;
+    private Oxygen oxygen;              // Oxygen class
+    private AudioSource airRelease;     // Air release SFX
 
     // Start is called before the first frame update
     private void Awake()
     {
-        oxygen = FindAnyObjectByType<Oxygen>();
-        airRelease = GetComponent<AudioSource>();
+        oxygen = FindAnyObjectByType<Oxygen>();     // Get Oxygen script
+        airRelease = GetComponent<AudioSource>();   // Get audio source
     }
 
-    // Update is called once per frame
-    private void Update()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -30,7 +25,6 @@ public class RocketReplenish : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             oxygen.ReplenishOxygen(100);
-            //airRelease.Play();
         }
     }
 }

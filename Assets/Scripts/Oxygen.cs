@@ -2,11 +2,11 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Oxygen : MonoBehaviour
 {
-    public float maxOxygen = 100.0f; //Starting oxygen level
-    public float currentOxygen = 0.0f;
-    public float oxygenDepletionRate = 1; //Rate of depletion of oxygen
-    public Image oxygenBar;
-    public Text oxygenText;
+    public float maxOxygen = 100.0f;            // Starting oxygen level
+    public float currentOxygen = 0.0f;          // current oxygen level
+    public float oxygenDepletionRate = 1;       // Rate of depletion of oxygen
+    public Image oxygenBar;                     // Oxygen level
+    public Text oxygenText;                     // Oxygen text tag
 
     void Start()
     {
@@ -24,17 +24,15 @@ public class Oxygen : MonoBehaviour
             currentOxygen = 0;
             //DEAD
             //GAMEOVER
-            Debug.Log("You are dead!");
         }
         else
         {
-            Debug.Log("Something is wrong!");
+            // Something else
         }
     }
 
     public void ReplenishOxygen(int amount)
     {
-        //currentOxygen += amount * Time.deltaTime;
 
         if (currentOxygen > maxOxygen)
         {
@@ -60,20 +58,16 @@ public class Oxygen : MonoBehaviour
 
     void Update()
     {
+        // Updates oxygen text
         oxygenText.text = "Oxygen";
+
         OxygenBarFiller();
         ColorChanger();
 
         //Check if there is any oxygen remaining
         if (currentOxygen > 0)
         {
-            //currentOxygen -= oxygenDepletionRate * Time.deltaTime;
             LoseOxygen(0.05f);
-        }
-
-        else
-        {
-            //DEAD
         }
     }
 }
