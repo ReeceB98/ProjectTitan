@@ -67,7 +67,7 @@ public class Oxygen : MonoBehaviour
         //Check if there is any oxygen remaining
         if (currentOxygen > 0)
         {
-            LoseOxygen(0.05f);
+            LoseOxygen(0.01f);
         }
     }
 }
