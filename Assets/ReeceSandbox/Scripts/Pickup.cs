@@ -37,15 +37,13 @@ public class Pickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Rocket"))
         {
-            //if (interactAction.triggered)
-            //{
-                scanText.gameObject.SetActive(true);
-                gameObject.GetComponent<MeshRenderer>().enabled = false;
-                gameObject.GetComponent<BoxCollider>().enabled = false;
-                StartCoroutine(DisableScanText());
-            //}
+            Debug.Log("Triggered");
+            scanText.gameObject.SetActive(true);
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
+            gameObject.GetComponent<BoxCollider>().enabled = false;
+            StartCoroutine(DisableScanText());
         }
     }
 
